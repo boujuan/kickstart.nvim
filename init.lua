@@ -100,7 +100,7 @@ require('lazy').setup({
 
       -- Useful status updates for LSP
       -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-      { 'j-hui/fidget.nvim', opts = {} },
+      { 'j-hui/fidget.nvim',       opts = {} },
 
       -- Additional lua configuration, makes nvim stuff amazing!
       'folke/neodev.nvim',
@@ -219,12 +219,12 @@ require('lazy').setup({
     priority = 1000,
     lazy = false,
     config = function()
-      --vim.cmd.colorscheme 'tokyonight'
-      require('onedark').setup {
+      vim.cmd.colorscheme 'tokyonight'
+      --[[  require('onedark').setup {
         -- Set a style preset. 'dark' is default.
         style = 'dark', -- dark, darker, cool, deep, warm, warmer, light
       }
-      require('onedark').load()
+      require('onedark').load()]]
     end,
   },
 
